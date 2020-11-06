@@ -64,6 +64,7 @@ namespace PdfSharp.Xamarin.Forms.Droid
 						mx.PostRotate(270);
 						break;
 					default:
+						mx.PostRotate(90);
 						ct.ThrowIfCancellationRequested();
 						Bitmap.Compress(CompressFormat.Jpeg, _quality, ms);
 						ct.ThrowIfCancellationRequested();
